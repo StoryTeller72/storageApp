@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">storageApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hintNewProduct">Название нового товара</string>
+    <string name="newProductPrice">Цена нового товара</string>
+    <string name="amountNewProduct">Количество едениц нового товара</string>
+    <string name="addProductText">Добавить товар</string>
+    <string name="deleteText">Удалить товар</string>
+    <string name="addEditproduct">Добавить</string>
+    <string name="productName">Название товара</string>
+    <string name="productPrice">Цена</string>
+    <string name="amount">Количество</string>
+    <string name="delete_text">Введите количество</string>
+</resources>

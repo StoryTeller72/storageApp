@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SellFragment"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_headerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_headerPrice"
+        android:text="@string/productName"
+        android:gravity="center"
+        app:layout_constraintHorizontal_weight="60"/>
+
+    <TextView
+        android:id="@+id/tv_headerPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_headerName"
+        app:layout_constraintEnd_toStartOf="@id/tv_headerAmount"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:text="@string/productPrice"
+        app:layout_constraintHorizontal_weight="20"/>
+
+    <TextView
+        android:id="@+id/tv_headerAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/amount"
+        app:layout_constraintHorizontal_weight="20"/>
+
+
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_headerName"
+        android:background="#606060"/>
+
+    <TextView
+        android:id="@+id/tv_itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/ListItemText"
+        android:minLines="1"
+        android:maxLines="3"
+        android:singleLine="false"
+        tools:text="asdsadsad asdjsak dhjjoe;ghf;sdjghfdjl;ghjfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topLine"
+        app:layout_constraintEnd_toStartOf="@id/tv_itemPrice"
+        app:layout_constraintHorizontal_weight="60"/>
+
+    <TextView
+        android:id="@+id/tv_itemPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/ListItemText"
+        app:layout_constraintTop_toTopOf="@id/topLine"
+        app:layout_constraintStart_toEndOf="@id/tv_itemName"
+        app:layout_constraintEnd_toStartOf="@id/tv_itemAmount"
+        app:layout_constraintHorizontal_weight="20"
+        android:gravity="center"
+        tools:text="20"/>
+    <TextView
+        android:id="@+id/tv_itemAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/topLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_itemPrice"
+        app:layout_constraintHorizontal_weight="20"
+        android:gravity="center"
+        style="@style/ListItemText"
+        tools:text="78" />
+    
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_itemName"
+        android:background="#606060"/>
+
+    <EditText
+        android:id="@+id/et_amountForActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/viewBottom"
+        android:layout_marginTop="30dp"
+        android:hint="@string/delete_text"
+        android:gravity="center"
+        android:inputType="number"
+        android:autofillHints="0" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_amountForActions"
+        android:text="Отнять"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_delete"
+        android:text="Добавить"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_edit_24"
+        app:backgroundTint="@color/purple_500"
+        app:tint="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

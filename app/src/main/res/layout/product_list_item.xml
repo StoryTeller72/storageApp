@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/ListItemText"
+        tools:text="dasdsad dasd sad sad asd sad sad sad sad sadsad sad "
+        android:minLines="1"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:layout_weight="60"/>
+
+    <TextView
+        android:id="@+id/tv_itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListItemText"
+        tools:text="26"
+        android:layout_weight="30"/>
+    <TextView
+        android:id="@+id/tv_itemAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListItemText"
+        tools:text="78"
+        android:layout_weight="10"/>
+
+</LinearLayout>
