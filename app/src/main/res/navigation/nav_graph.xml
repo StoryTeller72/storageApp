@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listOfProductsFragment">
+
+    <fragment
+        android:id="@+id/listOfProductsFragment"
+        android:name="com.example.storageapp.fragments.ListOfProductsFragment"
+        android:label="fragment_list_of_producrs"
+        tools:layout="@layout/fragment_list_of_producrs" >
+        <action
+            android:id="@+id/action_listOfProductsFragment_to_newProductFragment"
+            app:destination="@id/newProductFragment" />
+        <action
+            android:id="@+id/action_listOfProductsFragment_to_sellFragment"
+            app:destination="@id/sellFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.example.storageapp.fragments.EditProductFragment"
+        android:label="fragment_edit_product"
+        tools:layout="@layout/fragment_edit_product" >
+        <action
+            android:id="@+id/action_editProductFragment_to_listOfProductsFragment"
+            app:destination="@id/listOfProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newProductFragment"
+        android:name="com.example.storageapp.fragments.NewProductFragment"
+        android:label="fragment_new_product"
+        tools:layout="@layout/fragment_new_product" >
+        <action
+            android:id="@+id/action_newProductFragment_to_listOfProductsFragment"
+            app:destination="@id/listOfProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellFragment"
+        android:name="com.example.storageapp.fragments.SellFragment"
+        android:label="fragment_sell"
+        tools:layout="@layout/fragment_sell" >
+        <action
+            android:id="@+id/action_sellFragment_to_listOfProductsFragment"
+            app:destination="@id/listOfProductsFragment" />
+        <action
+            android:id="@+id/action_sellFragment_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+    </fragment>
+</navigation>
