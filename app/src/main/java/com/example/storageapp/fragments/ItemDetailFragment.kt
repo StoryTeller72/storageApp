@@ -8,6 +8,6 @@ import android.view.ViewGroup
 import com.example.storageapp.R
 
 
-class SellFragment : Fragment() {
+class ItemDetailFragment : Fragment() {
 
 }
